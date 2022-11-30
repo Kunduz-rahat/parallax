@@ -1,8 +1,8 @@
 window.addEventListener('scroll', e => {
-	document.documentElement.style.setProperty('--scrollTop', `${this.scrollY}px`) // Update method
+	document.body.style.cssText=`--scrollTop: ${this.scrollY}px` // Update method
 })
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
-ScrollSmoother.create({
-	wrapper: '.wrapper',
-	content: '.content'
-})
+// gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
+// ScrollSmoother.create({
+// 	wrapper: '.wrapper',
+// 	content: '.content'
+// })
